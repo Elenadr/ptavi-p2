@@ -22,7 +22,10 @@ class MiCalculadoraHija(Calculadora):
         return op1 * op2
     def div(self, op1, op2):
         """ Function to substract the operands """
-        return op1 / op2
+        if op2 == 0:
+            sys.exit('Division by zero is not allowed')
+        else:
+            return op1 / op2
 
 if __name__ == "__main__":
     micalculadorahija = MiCalculadoraHija()
@@ -41,12 +44,10 @@ if __name__ == "__main__":
         result = cuenta1
     elif sys.argv[2] == "resta":
         result = cuenta2
-    elif syst.argv[2] == "multiplicacion":
+    elif sys.argv[2] == "multiplicacion":
         result = cuenta3
-    elif syst.argv[2] == "division":
+    elif sys.argv[2] == "division":
         result = cuenta4
-    elif operando2 == 0:
-        sys.exit('Division by zero is not allowed')
     else:
         sys.exit('Operación sólo puede ser sumar o restar.')
 
