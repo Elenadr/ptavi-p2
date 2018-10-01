@@ -5,27 +5,22 @@ Created on Thu Sep 27 13:59:11 2018
 
 @author: elenadr
 """
-
-
 import sys
+import calcoo
 
-class Calculadora:
-    def plus(self, op1, op2):
-        """ Function to sum the operands. Ops have to be ints """
-        return op1 + op2
-    def minus(self, op1, op2):
-        """ Function to substract the operands """
-        return op1 - op2
-class MiCalculadoraHija(Calculadora):
+
+class MiCalculadoraHija(calcoo.Calculadora):
     def mult(self, op1, op2):
         """ Function to sum the operands. Ops have to be ints """
         return op1 * op2
+
     def div(self, op1, op2):
         """ Function to substract the operands """
         if op2 == 0:
             sys.exit('Division by zero is not allowed')
         else:
             return op1 / op2
+
 
 if __name__ == "__main__":
     micalculadorahija = MiCalculadoraHija()
@@ -36,7 +31,7 @@ if __name__ == "__main__":
         cuenta2 = micalculadorahija.minus(operando1, operando2)
         cuenta3 = micalculadorahija.mult(operando1, operando2)
         cuenta4 = micalculadorahija.div(operando1, operando2)
-        
+
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
