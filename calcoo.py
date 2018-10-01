@@ -8,13 +8,16 @@ Created on Thu Sep 27 13:13:37 2018
 
 import sys
 
+
 class Calculadora:
     def plus(self, op1, op2):
         """ Function to sum the operands. Ops have to be ints """
         return op1 + op2
+
     def minus(self, op1, op2):
         """ Function to substract the operands """
         return op1 - op2
+
 
 if __name__ == "__main__":
     micalculadora = Calculadora()
