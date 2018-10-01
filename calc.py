@@ -29,3 +29,14 @@ if __name__ == "__main__":
         sys.exit('Operación sólo puede ser sumar o restar.')
 
     print(result)
+
+  
+       """ if lista[0] == 'suma'
+            micalculadorahija.plus
+        elif lista[0] == 'resta'
+            micalculadorahija.minus
+        elif lista[0] == 'multiplicacion'
+            micalculadorahija.mult
+        elif lista [0] == 'division'
+            micalculadorahija.div """
+        
